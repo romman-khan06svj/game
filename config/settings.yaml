@@ -1,8 +1,8 @@
 # Game Settings
 
 game:
-  title: "Open World Game"
-  version: "0.1.0"
+  title: "Open World Game - GTA-Like"
+  version: "0.2.0"
   fps: 60
   vsync: true
 
@@ -32,13 +32,27 @@ player:
 
 vehicles:
   car_speed: 500
+  car_acceleration: 200
   bike_speed: 450
+  bike_acceleration: 250
   truck_speed: 350
+  truck_acceleration: 150
+
+combat:
+  player_damage: 15
+  npc_damage: 10
+  attack_range: 50
+  attack_cooldown: 0.5
 
 ai:
-  npc_count: 50
+  npc_count: 5
+  npc_speed: 100
   view_distance: 500
   patrol_speed: 100
+
+missions:
+  auto_start_first: true
+  show_mission_progress: true
 
 audio:
   master_volume: 0.8
@@ -48,6 +62,7 @@ audio:
 graphics:
   draw_debug: false
   draw_fps: true
+  draw_grid: true
   particle_count: 1000
   shadow_quality: "medium"
 
