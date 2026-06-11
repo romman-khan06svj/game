@@ -1,0 +1,66 @@
+# Game Settings
+
+game:
+  title: "Open World Game"
+  version: "0.1.0"
+  fps: 60
+  vsync: true
+
+window:
+  width: 1920
+  height: 1080
+  fullscreen: false
+  resizable: true
+
+world:
+  width: 2000
+  height: 2000
+  tile_size: 32
+  chunks: 64
+
+physics:
+  gravity: 9.81
+  friction: 0.95
+  air_resistance: 0.98
+
+player:
+  walk_speed: 150
+  run_speed: 300
+  jump_force: 600
+  health: 100
+  armor: 0
+
+vehicles:
+  car_speed: 500
+  bike_speed: 450
+  truck_speed: 350
+
+ai:
+  npc_count: 50
+  view_distance: 500
+  patrol_speed: 100
+
+audio:
+  master_volume: 0.8
+  music_volume: 0.6
+  sfx_volume: 0.8
+
+graphics:
+  draw_debug: false
+  draw_fps: true
+  particle_count: 1000
+  shadow_quality: "medium"
+
+controls:
+  forward: [w, up]
+  backward: [s, down]
+  left: [a, left]
+  right: [d, right]
+  jump: [space]
+  sprint: [lshift]
+  interact: [e]
+  fire: [f]
+  aim: [rmb]
+  inventory: [i]
+  map: [m]
+  menu: [escape]
